@@ -2,18 +2,18 @@
 export default {
   data() {
     return {
-      title:"Main"
+      content:"--> Content goes here <--"
     }
   }
 }
 </script>
 
 <template>
-  <h1>{{title}}</h1>
+  <h1> {{content}} </h1>
 </template>
 
 <style scoped>
 h1{
-    color: coral;
+  color: white;
 }
 </style>
