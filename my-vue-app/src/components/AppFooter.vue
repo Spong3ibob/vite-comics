@@ -18,14 +18,16 @@ export default {
 </script>
 
 <template>
-  <header>
-   <HeaderFooter/> 
-  </header>
-  <main>
-    <MainFooter/>
-  </main>
   <footer>
-    <FooterButtom/>
+    <header>
+    <HeaderFooter/> 
+    </header>
+    <main>
+      <MainFooter/>
+    </main>
+    <footer>
+      <FooterButtom/>
+    </footer>
   </footer>
    
 </template>

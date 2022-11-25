@@ -1,5 +1,9 @@
 <script>
+import ImageMain from './ImageMain.vue';
 export default {
+  components:{
+    ImageMain
+  },
   data() {
     return {
       content:"--> Content goes here <--"
@@ -9,7 +13,10 @@ export default {
 </script>
 
 <template>
-  <h1> {{content}} </h1>
+  <ImageMain/>
+  <main>
+    <h1> {{content}} </h1>
+  </main>
 </template>
 
 <style scoped>

@@ -3,15 +3,42 @@ export default {
   data() {
     return {
       navigations:[
-        "CHARATERS",
-        "COMICS",
-        "TV",
-        "GAMES",
-        "COLECTIBLES",
-        "VIDEOS",
-        "FANS",
-        "NEWS",
-        "SHOP"
+        {
+          name:"CHARATERS",
+          status:false,
+        },
+        {
+          name:"COMICS",
+          status:true,
+        },
+        {
+          name:"TV",
+          status:false,
+        },
+        {
+          name:"GAMES",
+          status:false,
+        },
+        {
+          name:"COLECTIBLES",
+          status:false,
+        },
+        {
+          name:"VIDEOS",
+          status:false,
+        },
+        {
+          name:"FANS",
+          status:false,
+        },
+        {
+          name:"NEWS",
+          status:false,
+        },
+        {
+          name:"SHOP",
+          status:false,
+        },  
     ]
     }
   }
@@ -19,10 +46,12 @@ export default {
 </script>
 
 <template>
-  <img src="../assets/img/dc-logo.png" alt="">
-  <nav>
-    <li v-for="navigation in navigations" class="active">{{navigation}}</li>
-  </nav>
+  <header>
+    <img src="../assets/img/dc-logo.png" alt="">
+    <nav>
+      <li v-for="navigation in navigations" :class="{active: navigation.status}">{{navigation.name}}</li>
+    </nav>
+</header>
 </template>
 
 <style lang="scss">
@@ -31,9 +60,9 @@ nav{
 }
 li{
   padding: 50px 15px;
-  &.active:hover{
+}
+.active{
     color: var(--primary-color);
     border-bottom: 3px solid;
-  }
 }
 </style>
