@@ -10,7 +10,7 @@ export default {
 
 <template>
     <div class="container">
-        <img src="../assets/img/jumbotron.jpg" alt="">
+        
     </div>
 </template>
 
@@ -20,5 +20,6 @@ export default {
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
+    background-image: url(../assets/img/jumbotron.jpg);
    }
 </style>

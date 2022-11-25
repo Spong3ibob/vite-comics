@@ -1,8 +1,11 @@
 <script>
 import ImageMain from './ImageMain.vue';
+import CardMain from './CardMain.vue';
+
 export default {
   components:{
-    ImageMain
+    ImageMain,
+    CardMain
   },
   data() {
     return {
@@ -15,7 +18,9 @@ export default {
 <template>
   <ImageMain/>
   <main>
-    <h1> {{content}} </h1>
+    <div class="container-cards">
+      <CardMain />
+    </div>
   </main>
 </template>
 
